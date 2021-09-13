@@ -1,0 +1,23 @@
+// components/splash/splash.module.scss
+
+@import "config";
+
+.background {
+	//background-image: url($splash-mobile);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	height: 100vh;
+	@media only screen and (min-width: 1224px) {
+		background-attachment: fixed;
+		//background-image: url($splash-desktop);
+	}
+}
+
+.logo {
+	height: 25%;
+	margin: auto;
+	object-fit: contain;
+	width: auto;
+}

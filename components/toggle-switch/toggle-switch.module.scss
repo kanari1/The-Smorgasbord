@@ -1,0 +1,74 @@
+$base-color: black;
+$accent-color: black;
+$comp-color: black;
+
+.switch {
+    height: 90px;
+    position: relative;
+    p {
+		font-weight: bold;
+        position: absolute;
+        &.left {
+            left: 50px;
+			top: 30px;
+		}
+        &.right {
+			right: 50px;
+			top: 30px;
+		}
+	}
+}
+
+.switchInput {
+    display: none;
+    &:checked {
+        + .switchLabel:before {
+            top: 0;
+            left: 0;
+            width: 140px;
+            height: 70px;
+            border-color: $base-color;
+		}
+        + .switchLabel:after {
+            top: 8px;
+            right: 8px;
+            width: 54px;
+            height: 54px;
+            border-color: $accent-color;
+		}
+	}
+}
+
+.switchLabel {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 140px;
+    height: 70px;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    cursor: pointer;
+    &:after {
+        top: 0;
+        right: 0;
+        width: 140px;
+        height: 70px;
+        border: 3px solid $base-color;
+	}
+    &:before {
+        top: 8px;
+        left: 8px;
+        width: 54px;
+        height: 54px;
+		border: 3px solid $accent-color;
+	}
+    &:after, &:before {
+        content: "";
+        position: absolute;
+        border-radius: 50px;
+        box-sizing: border-box;
+        transition: 0.5s ease top, 0.5s ease left, 0.5s ease right, 0.5s ease width, 0.5s ease height, 0.5s ease border-color;
+	}
+}

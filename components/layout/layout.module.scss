@@ -1,0 +1,24 @@
+@import "config";
+
+.container {
+	font-size: 1.8rem;
+	height: 100%;
+	line-height: 1.6;
+}
+
+.main {
+	color: $color;
+	display: flex;
+	flex-direction: column;
+	font-family: $font, sans-serif;
+	margin-top: 3rem;
+	a {
+		color: $color-link;
+		text-decoration: none;
+		&:hover {
+			opacity: 0.7;
+		}
+}
+
+}
+

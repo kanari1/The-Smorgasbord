@@ -1,0 +1,75 @@
+{
+  "version": "11.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "SmorgStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "SmorgStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/SmorgStack/BrandLogos/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BrandLogosFA5FCD83",
+            "trace": [
+              "new Bucket (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/aws-s3/lib/bucket.js:521:26)",
+              "new SmorgStack (/home/max/Dropbox/osu/cs-340/project/next-portfolio/lib/cdk.js:8:5)",
+              "Object.<anonymous> (/home/max/Dropbox/osu/cs-340/project/next-portfolio/bin/smorg.js:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/SmorgStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "process.<anonymous> (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/app.js:50:51)",
+              "Object.onceWrapper (node:events:472:26)",
+              "process.emit (node:events:365:28)"
+            ]
+          }
+        ],
+        "/SmorgStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/private/synthesis.js:185:9)",
+              "visit (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/private/synthesis.js:182:9)",
+              "injectMetadataResources (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "process.<anonymous> (/home/max/Dropbox/osu/cs-340/project/next-portfolio/node_modules/@aws-cdk/core/lib/app.js:50:51)",
+              "Object.onceWrapper (node:events:472:26)",
+              "process.emit (node:events:365:28)"
+            ]
+          }
+        ]
+      },
+      "displayName": "SmorgStack"
+    }
+  }
+}

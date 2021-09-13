@@ -1,0 +1,42 @@
+@import "config";
+
+.field {
+	text-align: center;
+}
+
+.heading {
+	font-weight: bold;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.input {
+	margin: 1rem auto 0 1rem;
+}
+
+.label {
+	font-weight:bold;
+}
+
+.loginForm {
+	height: auto;
+	margin-right: 5rem;
+	width: 450px;
+}
+
+.submit {
+	margin: auto;
+	text-align: center;
+}
+
+.toggle {
+	color: $color-link;
+	margin: 1rem auto;
+	text-align: center;
+	text-decoration: underline;
+	&:hover {
+		cursor: pointer;
+		text-decoration: none;
+	}
+}
+
